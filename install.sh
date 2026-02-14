@@ -13,7 +13,7 @@ PORT=$((RANDOM % 10000 + 20000))
 UUID=$(cat /proc/sys/kernel/random/uuid)
 SHORT_ID=$(openssl rand -hex 4)
 
-DOMAINS=("www.microsoft.com" "www.bing.com" "www.apple.com" "www.yahoo.com")
+DOMAINS=("www.microsoft.com" "www.bing.com" "www.apple.com" "itunes.apple.com")
 DEST_DOMAIN=${DOMAINS[$RANDOM % ${#DOMAINS[@]}]}
 
 NODE_IP=$(curl -s4m5 https://api.ipify.org || curl -s4m5 https://ifconfig.me)
